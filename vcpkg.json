@@ -12,6 +12,25 @@
 		},
 		{
 			"name": "qttools"
+		},
+		{
+			"name": "spdlog"
 		}
-	]
+	],
+	"vcpkg-configuration": {
+		"$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg-configuration.schema.json",
+		"default-registry": {
+			"kind": "git",
+			"repository": "https://github.com/microsoft/vcpkg.git",
+			"baseline": "dafef74af53669ef1cc9015f55e0ce809ead62aa"
+		},
+		"registries": [
+			{
+				"kind": "git",
+				"repository": "https://github.com/Physicc/vcpkg-registry",
+				"baseline": "82d0d36dfec0996ab5226568236029d0d252f3b0",
+				"packages": [ "spirv-headers", "spirv-tools" ]
+			}
+		]
+	}
 }
